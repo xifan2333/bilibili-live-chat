@@ -191,6 +191,7 @@ export default defineComponent({
     const form = reactive({
       ...defaultProps,
       ...sget('setting', {}),
+      auth: defaultProps.auth,
     });
     // 迁移
     if (form.face !== 'false') form.face = true;
